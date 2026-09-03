@@ -1,0 +1,24 @@
+[
+  {
+    "id": 101,
+    "enName": "fr_a1",
+    "name": "法语A1",
+    "description": "法语高频词汇分级 A1（词频 Top 1–1000），适合零基础入门",
+    "categoryId": 1,
+    "url": "A1.json",
+    "length": 1000,
+    "language": "fr",
+    "translateLanguage": "zh_CN",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": true,
+    "userId": "00000000-0000-0000-0000-000000000001",
+    "createdAt": "2026-06-03 15:27:15.113708",
+    "updatedAt": "2026-06-03 15:27:15.113708",
+    "cover": null,
+    "hidden": false,
+    "category": "法语分级",
+    "tags": ["CEFR", "A1"]
+  }
+]

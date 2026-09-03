@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+yarn-error.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+report.html
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+# Misc
+.fleet
+
+# Local env files
+.env
+.env.*
+!.env.example
+public/vscode
+apps/TypeWordsMiniApp
+*.tsbuildinfo
+
+# 词库构建源数据（体积大，构建后可丢弃）
+kaikki.org-dictionary-French.jsonl
+french-vocabulary-list-main/
