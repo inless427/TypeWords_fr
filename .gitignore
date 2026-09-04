@@ -44,4 +44,10 @@ apps/TypeWordsMiniApp
 
 # 词库构建源数据（体积大，构建后可丢弃）
 kaikki.org-dictionary-French.jsonl
-french-vocabulary-list-main/
+French-vocabulary-list-main/
+
+# Anki 源文件与词库源数据（不入库）
+list/
+collection.anki2
+*.apkg
+*.anki2

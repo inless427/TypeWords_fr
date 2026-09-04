@@ -130,5 +130,27 @@
     "hidden": false,
     "category": "法语分级",
     "tags": ["CEFR", "C2"]
+  },
+  {
+    "id": 107,
+    "enName": "fr_tcf",
+    "name": "TCF法语词汇",
+    "description": "TCF 法语考试词汇，共 7391 词，含中文释义",
+    "categoryId": 1,
+    "url": "tcf.json",
+    "length": 7391,
+    "language": "fr",
+    "translateLanguage": "zh_CN",
+    "version": 1,
+    "type": "word",
+    "isDefault": false,
+    "recommended": false,
+    "userId": "00000000-0000-0000-0000-000000000001",
+    "createdAt": "2026-06-03 15:27:15.113708",
+    "updatedAt": "2026-06-03 15:27:15.113708",
+    "cover": null,
+    "hidden": false,
+    "category": "TCF考试",
+    "tags": ["TCF"]
   }
 ]
