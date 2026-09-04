@@ -47,7 +47,7 @@ const { locales, setLocale } = useI18n()
 const route = useRoute()
 
 const showIcon = $computed(() => {
-  return ['/words', '/articles', '/setting', '/help', '/doc', '/feedback'].includes(route.path)
+  return ['/words', '/articles', '/setting', '/help', '/feedback'].includes(route.path)
 })
 
 onMounted(() => {
@@ -94,10 +94,6 @@ function onMouseLeave() {
         <NuxtLink to="/feedback" class="row">
           <IconFluentCommentEdit20Regular />
           <span>{{ $t('feedback') }}</span>
-        </NuxtLink>
-        <NuxtLink to="/doc" class="row">
-          <IconFluentDocument20Regular />
-          <span>{{ $t('document') }}</span>
         </NuxtLink>
         <NuxtLink to="/help" class="row">
           <IconFluentQuestionCircle20Regular />

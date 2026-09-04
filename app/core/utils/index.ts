@@ -736,7 +736,7 @@ export async function isNewUser() {
 }
 
 export function jump2Feedback() {
-  window.open('https://v.wjx.cn/vm/ev0W7fv.aspx#', '_blank')
+  window.open('https://github.com/inless427/TypeWords_fr/issues', '_blank')
 }
 
 export function isIOS() {

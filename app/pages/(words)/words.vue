@@ -30,7 +30,7 @@ import {
   useNav,
 } from '@/core/utils'
 import type { DictResource, Statistics } from '@/core/types/types.ts'
-import { onMounted, onUnmounted, watch } from 'vue'
+import { onUnmounted, watch } from 'vue'
 import { useRuntimeStore } from '@/core/stores/runtime.ts'
 import Book from '@/components/Book.vue'
 import { getDefaultDict } from '@/core/types/func.ts'
@@ -42,7 +42,6 @@ import {
   APP_NAME,
   DICT_LIST,
   LIB_JS_URL,
-  Old_Host,
   Origin,
   TourConfig,
   WordPracticeModeNameMap,
@@ -87,12 +86,12 @@ async function loadPracticeCache() {
 const shouldShowDialogPracticeMode = [WordPracticeMode.Shuffle, WordPracticeMode.ShuffleWordsTest]
 
 useSeoMeta({
-  title: `在线背单词与英语打字练习｜${APP_NAME}`,
-  description: '在电脑上选择 CET-4、CET-6、考研、GRE、IELTS 等词库，通过键盘跟打、拼写和科学间隔复习高效背单词。',
-  ogTitle: `在线背单词与英语打字练习｜${APP_NAME}`,
-  ogDescription: '在电脑上用键盘打字背单词，支持 50+ 词库和科学间隔复习。',
-  twitterTitle: `在线背单词与英语打字练习｜${APP_NAME}`,
-  twitterDescription: '在电脑上用键盘打字背单词，支持 50+ 词库和科学间隔复习。',
+  title: `在线背单词与法语打字练习｜${APP_NAME}`,
+  description: '在电脑上选择法语 A1–C2 分级词库，通过键盘跟打、拼写和科学间隔复习高效背单词。',
+  ogTitle: `在线背单词与法语打字练习｜${APP_NAME}`,
+  ogDescription: '在电脑上用键盘打字背法语单词，支持法语 A1–C2 分级词库和科学间隔复习。',
+  twitterTitle: `在线背单词与法语打字练习｜${APP_NAME}`,
+  twitterDescription: '在电脑上用键盘打字背法语单词，支持法语 A1–C2 分级词库和科学间隔复习。',
 })
 
 let practiceData = $ref<PracticeWordCache>({
@@ -548,11 +547,6 @@ const systemPracticeText = $computed(() => {
   }
 })
 
-let isOldHost = $ref(false)
-onMounted(() => {
-  isOldHost = window.location.host === Old_Host
-})
-
 onUnmounted(() => {
   document.removeEventListener('visibilitychange', onvisibilitychange)
 })
@@ -560,12 +554,6 @@ onUnmounted(() => {
 
 <template>
   <BasePage>
-    <div class="my-100 text-4xl font-bold text-red" v-if="isOldHost">
-      已启用新域名
-      <a class="mr-4" :href="`${Origin}/words?from_old_site=1`">{{ Origin }}</a
-      >当前 2study.top 域名将在 7 月 3 号停止使用
-    </div>
-
     <div class="card flex flex-col md:flex-row gap-4">
       <div class="flex-1 flex flex-col justify-between">
         <div class="flex gap-3">

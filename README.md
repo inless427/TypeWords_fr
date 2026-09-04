@@ -3,95 +3,90 @@
 </h1>
 
 <p align="center">
-  <a href="/README.md">English</a> |
-  <a href="/docs/README.es.md">Español</a> |
-  <a href="/docs/README.de.md">Deutsch</a> |
-  <a href="/docs/README.fr.md">Français</a> |
-  <a href="/docs/README.pt.md">Português</a> |
-  <a href="/docs/README.ru.md">Русский</a> |
-  <a href="/docs/README.uk.md">Українська</a> |
-  <a href="/docs/README.ja.md">日本語</a> |
-  <a href="/docs/README.ko.md">한국인</a> |
-  <a href="/docs/README.th.md">ไทย</a> |
-  <a href="/docs/README.vi.md">Tiếng Việt</a> |
-  <a href="/docs/README.id.md">Bahasa Indonesia</a> |
-  <a href="/docs/README.zh-TW.md">繁體中文</a> |
-  <a href="/docs/README.zh-CN.md">简体中文</a> 
+  <b>每次敲击一个单词地学习法语 —— 更聪明的记忆、更高效的学习，一款开源的单词与文章练习工具</b>
 </p>
 
-<p align="center">
-  <b>Learn English, one keystroke at a time; smarter memorization, more efficient learning - an open-source word and article practice tool</b>
-</p>
+## 关于本项目
 
-## Online Access
+本项目是 [TypeWords](https://github.com/zyronon/TypeWords) 的法语版 fork。在保留原版单词 / 文章打字练习全部能力的基础上，将内置词典替换为**法语 CEFR 分级词汇库**，面向以中文为母语的法语学习者。
 
-<https://typewords.cc>
+- 内置 **A1–C2 六个等级**的法语高频词词典，按词频分段，每级约 1000 词，共约 6000 词
+- 每个词条附带 **IPA 音标**、**中文释义**、短语与例句
+- 保留原版的智能记忆曲线、听写、默写、错词本等完整学习流程
 
-<img width="1920" height="1440" alt="practice words" src="/public/imgs/words.png" />
-<img width="1920" height="1440" alt="practice articles" src="/public/imgs/articles.png" />
+## 在线访问
 
-## Features
+<https://type.ennuyez-vous.xyz>
 
-### Word Practice
+## 功能特性
 
-- Practice modes: Follow-along / Dictation / Self-test / Spelling from memory
-- Smart mode: Automatically calculates learning words based on memory curves, deepening memory through dictation
-- Free mode: No restrictions, plan your own learning
-- Provides phonetics, pronunciation (American/British), example sentences, phrases, synonyms, root words, etymology, error statistics, and more
+### 单词练习
 
-### Article Memorization
+- 练习模式：跟读 / 听写 / 自测 / 默写
+- 智能模式：根据记忆曲线自动计算学习词量，通过听写加深记忆
+- 自由模式：不受限制，自行规划学习
+- 提供音标、发音、例句、短语、同义词、词根词缀、词源、拼写错误统计等信息
 
-- Built-in classic textbooks; you can also add or import articles with one-click translation and bilingual comparison
-- Follow-along + dictation dual modes, sentence-by-sentence input with automatic pronunciation for more efficient memorization
-- Supports listening while writing from memory to reinforce learning
+### 文章背诵
 
-### Favorites, Wrong Words, Mastered
+- 内置经典课文，也可自行添加或导入文章，一键翻译、双语对照
+- 跟读 + 听写双模式，逐句输入、自动发音，背诵更高效
+- 支持边听边默写，巩固学习
 
-- Words typed incorrectly while learning are automatically added to your wrong word book for later review
-- Actively add words to mastered to automatically skip them in future sessions
-- Add words to favorites for consolidation and review
+### 生词 / 错词 / 已掌握
 
-### Highly Customizable
+- 学习中打错的单词自动加入错词本，方便后续复习
+- 主动将单词标记为"已掌握"，后续学习中自动跳过
+- 收藏单词，便于巩固复习
 
-- Rich keyboard sound effects
-- Customizable shortcuts
-- Highly configurable settings
+### 高度自定义
 
-### Clean and Efficient
+- 丰富的键盘按键音效
+- 可自定义快捷键
+- 高度可配置的设置项
 
-- Clean design, modern UI, ad-free
-- Refreshing interface, simple operation
-- No forced subscription to any platform
+### 简洁高效
 
-### Vocabulary Library
+- 简洁的设计、现代化的界面、无广告
+- 清爽的操作体验
+- 不强绑任何平台
 
-Built-in commonly used vocabulary including CET-4, CET-6, GMAT, GRE, IELTS, SAT, TOEFL, Graduate English, TEM-4, TEM-8, and more.
-Designed to meet most users' vocabulary learning needs. Community contributions of additional vocabulary are welcome.
+### 词汇库
 
-## Running the Project
+内置 **A1–C2 法语分级词汇**，按词频从入门到母语级逐级递进，覆盖绝大多数法语学习者的词汇需求。欢迎社区贡献更多法语词库。
 
-#### Note: This project can run standalone with data saved locally. Manual backup is required when switching devices; this does not affect normal usage.
+## 本地运行
 
-This project is built with `Nuxt` and requires a Node.js environment.
+> 说明：本项目可独立运行，数据保存在本地。换设备时需手动备份，不影响正常使用。
 
-1. Install NodeJS, refer to the [official documentation](https://nodejs.org/en/download)
-2. The project is large. It's recommended to use `git clone --depth 1 https://github.com/zyronon/TypeWords.git` to clone only the latest commit. GitHub's Download ZIP feature will not work properly.
-3. In the project root directory, open a terminal and run `pnpm install` to download dependencies.
-4. Run `pnpm run dev` to start the project. The default address is [`http://localhost:5567`](http://localhost:5567)
-5. Open [`http://localhost:5567`](http://localhost:5567) in your browser to access the project.
-6. Run `pnpm run generate` to build the project files.
+本项目基于 `Nuxt` 构建，需要 Node.js 环境。
 
-## Features and Suggestions
+1. 安装 Node.js，参考[官方文档](https://nodejs.org/en/download)
+2. 克隆仓库（仅克隆最新提交即可，项目较大）：
+   ```bash
+   git clone --depth 1 https://github.com/inless427/TypeWords_fr.git
+   ```
+   > 注意：GitHub 的 Download ZIP 方式无法正常工作。
+3. 在项目根目录打开终端，运行 `pnpm install` 安装依赖
+4. 运行 `pnpm run dev` 启动项目，默认地址为 [`http://localhost:5567`](http://localhost:5567)
+5. 浏览器打开 [`http://localhost:5567`](http://localhost:5567) 即可访问
+6. 运行 `pnpm run generate` 构建项目产物
 
-The project is currently in early development, with new features being added continuously. If you have any suggestions or feature requests, feel free to open an `Issue`.
-If you like the design philosophy of this software, please submit a `PR`. Thank you for your support!
+## 功能与建议
 
-## Contributing Guide
+项目目前仍在持续开发中，会不断加入新功能。如果你有任何建议或功能需求，欢迎提交 `Issue`。
+如果你认可本软件的设计理念，欢迎提交 `PR`。感谢你的支持！
 
-[Contributing Guidelines](/docs/CONTRIBUTING.md)
+## 贡献指南
 
-If you're interested in this project, we welcome your contributions and will provide as much help as possible.
+[贡献指南](/docs/CONTRIBUTING.md)
 
-Before contributing, please communicate with the developers to avoid code conflicts.
+如果你对项目感兴趣，欢迎贡献，我们会尽可能提供帮助。
 
-Thank you again for your contributions!
+贡献前请先与开发者沟通，避免代码冲突。
+
+再次感谢你的贡献！
+
+## 致谢
+
+本项目基于 [TypeWords](https://github.com/zyronon/TypeWords) 移植，感谢原作者的出色工作与开源精神。

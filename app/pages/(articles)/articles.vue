@@ -21,12 +21,12 @@ dayjs.extend(isoWeek)
 dayjs.extend(isBetween)
 
 useSeoMeta({
-  title: `英语文章跟打练习｜${APP_NAME}`,
-  description: '在电脑上进行英语文章跟打、逐句精听和键盘输入练习，通过真实语境提升英语阅读、听力与拼写能力。',
-  ogTitle: `英语文章跟打练习｜${APP_NAME}`,
-  ogDescription: '使用英语文章跟打、逐句精听和键盘输入练习，在真实语境中提升英语能力。',
-  twitterTitle: `英语文章跟打练习｜${APP_NAME}`,
-  twitterDescription: '使用英语文章跟打、逐句精听和键盘输入练习，在真实语境中提升英语能力。',
+  title: `法语文章跟打练习｜${APP_NAME}`,
+  description: '在电脑上进行法语文章跟打、逐句精听和键盘输入练习，通过真实语境提升法语阅读、听力与拼写能力。',
+  ogTitle: `法语文章跟打练习｜${APP_NAME}`,
+  ogDescription: '使用法语文章跟打、逐句精听和键盘输入练习，在真实语境中提升法语能力。',
+  twitterTitle: `法语文章跟打练习｜${APP_NAME}`,
+  twitterDescription: '使用法语文章跟打、逐句精听和键盘输入练习，在真实语境中提升法语能力。',
 })
 
 const { nav } = useNav()

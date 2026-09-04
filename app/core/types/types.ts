@@ -206,15 +206,3 @@ export type Question = {
   candidates: Candidate[]
   correctIndex: number
 }
-// 类型定义
-export interface Resource {
-  name?: string
-  description?: string
-  difficulty?: string
-  link?: string
-  author?: string
-  features?: string
-  suitable?: string
-  type?: string
-  children?: Resource[]
-}

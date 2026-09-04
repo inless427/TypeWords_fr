@@ -684,10 +684,6 @@ function disable360() {
                 <a href="https://supabase.com/" target="_blank">https://supabase.com/</a>
               </div>
               <div>
-                {{ $t('supabase_tutorial') }}
-                <a href="https://www.kdocs.cn/l/cduLx52XXXgw" target="_blank">https://www.kdocs.cn/l/cduLx52XXXgw</a>
-              </div>
-              <div>
                 {{ $t('supabase_intro', { appName: APP_NAME }) }}
               </div>
             </div>

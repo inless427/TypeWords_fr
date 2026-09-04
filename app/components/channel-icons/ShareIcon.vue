@@ -77,36 +77,36 @@ const studyProgress = $computed(() => {
 
 const sentence = $computed(() => {
   let list = [
-    { en: 'Actions speak louder than words.', cn: '行动胜于言语' },
-    { en: 'Keep going, never give up!', cn: '坚持就是胜利' },
-    { en: "Where there's a will, there's a way.", cn: '有志者事竟成' },
-    { en: 'Every cloud has a silver lining.', cn: '黑暗中总有一线光明' },
-    { en: 'Time heals all wounds.', cn: '时间能治愈一切创伤' },
-    { en: 'Never say die.', cn: '永不言败' },
-    { en: 'The best is yet to come.', cn: '最好的尚未到来' },
-    { en: "Believe you can and you're halfway there.", cn: '相信你自己，你已经成功了一半' },
-    { en: 'No pain, no gain.', cn: '没有付出就没有收获' },
-    { en: 'Dream big and dare to fail.', cn: '大胆梦想，勇于失败' },
-    { en: 'Home is where the heart is.', cn: '心在哪里，家就在哪里' },
-    { en: 'Knowledge is power.', cn: '知识就是力量' },
-    { en: 'Practice makes perfect.', cn: '熟能生巧' },
-    { en: 'When in Rome, do as the Romans do.', cn: '入乡随俗' },
-    { en: 'Just do it.', cn: '只管去做' },
-    { en: 'So far, so good.', cn: '到目前为止，一切还好' },
-    { en: 'The early bird catches the worm.', cn: '早起的鸟儿有虫吃' },
-    { en: 'Every day is a new beginning.', cn: '每一天都是新的开始' },
-    { en: 'Success is a journey, not a destination.', cn: '成功是旅程，不是终点' },
-    { en: 'Your only limit is your mind.', cn: '你唯一的限制是你的思维' },
-    { en: 'A friend in need is a friend indeed.', cn: '患难见真情' },
-    { en: 'Silence is golden.', cn: '沉默是金' },
-    { en: 'Let bygones be bygones.', cn: '让过去的成为过去' },
-    { en: 'Keep calm and carry on.', cn: '保持冷静，继续前进' },
-    { en: 'Live and learn.', cn: '活到老，学到老' },
-    { en: 'Mistakes are proof that you are trying.', cn: '错误证明你在努力尝试' },
-    { en: 'Better late than never.', cn: '迟做总比不做好' },
-    { en: 'Be the change you wish to see in the world.', cn: '成为你希望在世界上看到的改变' },
-    { en: 'The journey of a thousand miles begins with a single step.', cn: '千里之行，始于足下' },
-    { en: 'When one door closes, another opens.', cn: '当一扇门关闭时，另一扇会打开' },
+    { fr: 'Les actes valent mieux que les paroles.', cn: '行动胜于言语' },
+    { fr: 'Continue sans jamais abandonner !', cn: '坚持就是胜利' },
+    { fr: 'Quand on veut, on peut.', cn: '有志者事竟成' },
+    { fr: 'Après la pluie, le beau temps.', cn: '黑暗中总有一线光明' },
+    { fr: 'Le temps guérit toutes les blessures.', cn: '时间能治愈一切创伤' },
+    { fr: 'Ne baisse jamais les bras.', cn: '永不言败' },
+    { fr: 'Le meilleur reste à venir.', cn: '最好的尚未到来' },
+    { fr: 'Crois en toi et tu es déjà à mi-chemin.', cn: '相信你自己，你已经成功了一半' },
+    { fr: 'Pas de peine, pas de gain.', cn: '没有付出就没有收获' },
+    { fr: 'Vois grand et ose échouer.', cn: '大胆梦想，勇于失败' },
+    { fr: 'Le cœur est là où est la maison.', cn: '心在哪里，家就在哪里' },
+    { fr: 'Le savoir, c’est le pouvoir.', cn: '知识就是力量' },
+    { fr: 'C’est en forgeant qu’on devient forgeron.', cn: '熟能生巧' },
+    { fr: 'À Rome, fais comme les Romains.', cn: '入乡随俗' },
+    { fr: 'Fonce.', cn: '只管去做' },
+    { fr: 'Jusqu’ici, tout va bien.', cn: '到目前为止，一切还好' },
+    { fr: 'L’avenir appartient à ceux qui se lèvent tôt.', cn: '早起的鸟儿有虫吃' },
+    { fr: 'Chaque jour est un nouveau départ.', cn: '每一天都是新的开始' },
+    { fr: 'Le succès est un voyage, pas une destination.', cn: '成功是旅程，不是终点' },
+    { fr: 'Ta seule limite, c’est ton esprit.', cn: '你唯一的限制是你的思维' },
+    { fr: 'C’est dans le besoin qu’on reconnaît ses amis.', cn: '患难见真情' },
+    { fr: 'Le silence est d’or.', cn: '沉默是金' },
+    { fr: 'Ce qui est passé est passé.', cn: '让过去的成为过去' },
+    { fr: 'Reste calme et continue.', cn: '保持冷静，继续前进' },
+    { fr: 'On apprend à tout âge.', cn: '活到老，学到老' },
+    { fr: 'Les erreurs prouvent que tu essaies.', cn: '错误证明你在努力尝试' },
+    { fr: 'Mieux vaut tard que jamais.', cn: '迟做总比不做好' },
+    { fr: 'Sois le changement que tu veux voir dans le monde.', cn: '成为你希望在世界上看到的改变' },
+    { fr: 'Un voyage de mille lieues commence par un premier pas.', cn: '千里之行，始于足下' },
+    { fr: 'Quand une porte se ferme, une autre s’ouvre.', cn: '当一扇门关闭时，另一扇会打开' },
   ]
   return list[Math.floor(Math.random() * list.length)]
 })
@@ -127,7 +127,7 @@ const sentence = $computed(() => {
           <div class="flex flex-col flex-1 space-y-3">
             <!-- 顶部用户信息 -->
             <div class="flex items-center">
-              <div class="ml-auto text-xs">Type Words | 英语学习</div>
+              <div class="ml-auto text-xs">Type Words | 法语学习</div>
             </div>
 
             <div class="bg-gray-900/30 py-4 center flex-col rounded-2xl">
@@ -157,7 +157,7 @@ const sentence = $computed(() => {
 
             <!-- 励志语句 -->
             <div class="bg-gray-900/30 py-4 rounded-2xl center flex-col flex-1 p-4">
-              <div class="text-3xl text-center italic mb-2 en-article-family">{{ sentence.en }}</div>
+              <div class="text-3xl text-center italic mb-2 en-article-family">{{ sentence.fr }}</div>
               <div class="text-base italic">{{ sentence.cn }}</div>
             </div>
           </div>
@@ -191,19 +191,19 @@ const sentence = $computed(() => {
           </div>
           <div class="flex items-start">
             <span class="mr-2">🚀</span>
-            在 {{ APP_NAME }}，学习英语也能成为超酷的事情！
+            在 {{ APP_NAME }}，学习法语也能成为超酷的事情！
           </div>
           <div class="flex items-start">
             <span class="mr-2">📸</span>
-            快来分享你的学习图片，让你的进步刷屏朋友圈，成为最受瞩目的英语学霸！😎
+            快来分享你的学习图片，让你的进步刷屏朋友圈，成为最受瞩目的法语学霸！😎
           </div>
           <div class="flex items-start">
             <span class="mr-2">💪</span>
-            这不只是简单的打卡，更是你秀出英语实力的舞台！
+            这不只是简单的打卡，更是你秀出法语实力的舞台！
           </div>
           <div class="flex items-start">
             <span class="mr-2">🔥</span>
-            分享你的学习记录，收获朋友们的点赞和认可，让你的朋友圈也掀起一股英语学习的热潮！
+            分享你的学习记录，收获朋友们的点赞和认可，让你的朋友圈也掀起一股法语学习的热潮！
           </div>
         </div>
 

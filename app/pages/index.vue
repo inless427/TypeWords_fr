@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { APP_NAME, GITHUB, Origin } from '@/core/config/env.ts'
-import { BaseIcon } from '@/base'
+import { APP_NAME, Origin } from '@/core/config/env.ts'
 import { usePlayBeep, usePlayCorrect, usePlayKeyboardAudio } from '@/core/hooks/sound.ts'
 
 definePageMeta({ layout: 'empty' })
@@ -45,39 +44,39 @@ function startTypingAnimation() {
 // ── 首屏打字 Demo（PC 端，轻量自包含，不依赖 store）──
 const demoWords = $computed(() => [
   {
-    word: 'persevere',
-    phonetic: '/ˌpɜːrsɪˈvɪər/',
+    word: 'persévérer',
+    phonetic: '/pɛʁ.se.ve.ʁe/',
     trans: t('demo_word_persevere_trans'),
     examples: [
-      { en: 'You must persevere if you want to succeed.', zh: t('demo_word_persevere_ex1') },
-      { en: 'She persevered through years of hardship.', zh: t('demo_word_persevere_ex2') },
+      { fr: 'Il faut persévérer si tu veux réussir.', zh: t('demo_word_persevere_ex1') },
+      { fr: 'Elle a persévéré malgré les difficultés.', zh: t('demo_word_persevere_ex2') },
     ],
   },
   {
-    word: 'eloquent',
-    phonetic: '/ˈeləkwənt/',
+    word: 'éloquent',
+    phonetic: '/e.lɔ.kɑ̃/',
     trans: t('demo_word_eloquent_trans'),
     examples: [
-      { en: 'He gave an eloquent speech at the ceremony.', zh: t('demo_word_eloquent_ex1') },
-      { en: 'Her eloquent writing moved the audience deeply.', zh: t('demo_word_eloquent_ex2') },
+      { fr: 'Il a prononcé un discours éloquent à la cérémonie.', zh: t('demo_word_eloquent_ex1') },
+      { fr: 'Ses mots éloquents ont profondément ému le public.', zh: t('demo_word_eloquent_ex2') },
     ],
   },
   {
     word: 'diligent',
-    phonetic: '/ˈdɪlɪdʒənt/',
+    phonetic: '/di.li.ʒɑ̃/',
     trans: t('demo_word_diligent_trans'),
     examples: [
-      { en: 'A diligent student always finishes homework on time.', zh: t('demo_word_diligent_ex1') },
-      { en: 'He was diligent in his research and rarely took breaks.', zh: t('demo_word_diligent_ex2') },
+      { fr: 'Un élève diligent termine toujours ses devoirs à l’heure.', zh: t('demo_word_diligent_ex1') },
+      { fr: 'Il travaille avec diligence et se repose rarement.', zh: t('demo_word_diligent_ex2') },
     ],
   },
   {
-    word: 'profound',
-    phonetic: '/prəˈfaʊnd/',
+    word: 'profond',
+    phonetic: '/pʁɔ.fɔ̃/',
     trans: t('demo_word_profound_trans'),
     examples: [
-      { en: 'Reading widely has a profound effect on vocabulary.', zh: t('demo_word_profound_ex1') },
-      { en: 'The discovery had a profound impact on modern science.', zh: t('demo_word_profound_ex2') },
+      { fr: 'Lire beaucoup a un effet profond sur le vocabulaire.', zh: t('demo_word_profound_ex1') },
+      { fr: 'Cette découverte a eu un impact profond sur la science moderne.', zh: t('demo_word_profound_ex2') },
     ],
   },
 ])
@@ -186,18 +185,6 @@ useSeoMeta({
         </nav>
         <!-- Actions -->
         <div class="ml-auto flex items-center gap-2 text-[var(--hw-text-2)]">
-          <!-- GitHub -->
-          <a
-            class="flex center gap-1 text-[var(--hw-text-2)] no-underline"
-            :href="GITHUB"
-            target="_blank"
-            aria-label="Github project address"
-          >
-            <BaseIcon title="Github" noBg>
-              <IconSimpleIconsGithub />
-            </BaseIcon>
-            <span class="text-xl">9k</span>
-          </a>
           <!-- Mobile menu button -->
           <button
             class="flex md:hidden items-center justify-center w-8 h-8 rounded-lg bg-transparent text-[var(--hw-text-2)] cursor-pointer"
@@ -232,22 +219,6 @@ useSeoMeta({
         <div class="relative z-1 max-w-[1200px] mx-auto w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
           <!-- ── Left: 文字区 ── -->
           <div class="flex-1 text-center lg:text-left">
-            <!-- Social proof badge -->
-            <div class="flex justify-center lg:justify-start mb-5">
-              <a
-                :href="GITHUB"
-                target="_blank"
-                class="inline-flex items-center gap-2 text-[1rem] font-semibold text-[#7c3aed] no-underline px-3.5 py-1.5 rounded-full border border-[rgba(124,58,237,.3)] bg-[rgba(124,58,237,.06)] hover:bg-[rgba(124,58,237,.12)] transition-all duration-150 cursor-pointer"
-              >
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" class="shrink-0">
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                9k+ GitHub Stars · {{ $t('hero_badge') }}
-              </a>
-            </div>
-
             <!-- Title -->
             <h1 class="hero-title flex flex-col mt-0 mb-4 leading-[1.08]">
               <span
@@ -336,18 +307,6 @@ useSeoMeta({
                 </svg>
                 {{ $t('hero_cta_start') }}
               </button>
-              <a
-                class="inline-flex items-center justify-center gap-2 px-7 h-12 rounded-xl font-semibold text-[.97rem] text-[var(--hw-text)] bg-transparent border border-solid border-[var(--hw-border)] no-underline hover:bg-[rgba(124,58,237,.06)] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all duration-200 sm:w-auto"
-                :href="GITHUB"
-                target="_blank"
-              >
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" class="shrink-0">
-                  <path
-                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
-                  />
-                </svg>
-                {{ $t('hero_cta_github') }}
-              </a>
             </div>
 
             <!-- 网站地址 -->
@@ -474,7 +433,7 @@ useSeoMeta({
                       class="text-[.82rem] leading-[1.6] flex flex-col gap-0.5"
                     >
                       <div class="italic text-[var(--hw-text-2)]">
-                        <span class="text-[#7c3aed] font-bold not-italic mr-1">{{ ei + 1 }}.</span>{{ ex.en }}
+                        <span class="text-[#7c3aed] font-bold not-italic mr-1">{{ ei + 1 }}.</span>{{ ex.fr }}
                       </div>
                       <div class="text-[.78rem] text-[var(--hw-text-3)] not-italic pl-3.5">{{ ex.zh }}</div>
                     </div>
